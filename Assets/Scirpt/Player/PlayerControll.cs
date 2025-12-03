@@ -11,7 +11,6 @@ public class PlayerControll : MonoBehaviour
 
     private Animator animator { get; set; }
     private SpriteRenderer spriteRenderer {get; set;}
-    Rigidbody2D rigidBody;
 
     [Header("Settings")] 
     public float moveSpeed = 3.0f;
@@ -23,8 +22,11 @@ public class PlayerControll : MonoBehaviour
     public float descendingSpeed = 1.0f;
 
     [field: SerializeField] private Transform GroundChecker;
+    [field: SerializeField] private float GroundCheckRadius = 0.1f;
+    [field: SerializeField] private LayerMask GroundLayerMask { get; set; }
     private float moveInput;
     
+    private static readonly int IS_GROUNDED = Animator.StringToHash("IsGrounded");
 
     private void Awake()
     {
@@ -48,12 +50,31 @@ public class PlayerControll : MonoBehaviour
         Vector2 moveVector = new Vector2(inputVector.x, 0.0f);
         transform.Translate(moveVector * moveSpeed * Time.deltaTime);
     }
-
+    private void Flip()
+    {
+        // 오른쪽 이동
+        if (moveInput > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        // 왼쪽 이동
+        else if (moveInput < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+    }
+    
+    //-------------------------------------------
 
     private enum JumpState
     {
-        
+        Grounded,
+        Ascending,
+        Descending
     }
+    
+    private bool isGrounded = true;
+    private bool prevIsGrounded;
     private void Jump()
     {
         
@@ -71,32 +92,28 @@ public class PlayerControll : MonoBehaviour
     {
         
     }
-    
-    private void Flip()
+
+    private void GroundCheck()
     {
-        // 오른쪽 이동
-        if (moveInput > 0)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-        // 왼쪽 이동
-        else if (moveInput < 0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
+        
     }
-    // private void Flip()
-    // {
-    //     // 오른쪽 이동
-    //     if (moveInput > 0)
-    //     {
-    //         transform.localScale = new Vector3(1, 1, 1);
-    //     }
-    //     // 왼쪽 이동
-    //     else if (moveInput < 0)
-    //     {
-    //         transform.localScale = new Vector3(-1, 1, 1);
-    //     }
-    // }
+    private void CheckIfGrounded()
+    {
+        //Physics2D : https://developerkoohoo.web.app/Unity/UnityBasic/12.%20Physics2D/
+        
+        // 2D에서 가장 많이 사용하는 Physics2D 함수
+        // Physics2D.Raycast(); Physics2D.RaycastAll(); 
+        // : 선과 겹쳐진(충돌한) 콜라이더가 있는지 검사합니다.
+        // Physics2D.OverlapBox(); Physics2D.OverlapBoxAll();
+        // : 박스(사각형)와 겹쳐진(충돌한) 콜라이더가 있는지 검사합니다.
+        // Physics2D.OverlapCircle(); Physics2D.OverlapCircleAll();
+        // : 원과 겹쳐진(충돌한) 콜라이더가 있는지 검사합니다.
+
+        prevIsGrounded = isGrounded; //isGrounded를 갱신하기 전에 prev에 보관한다
+        isGrounded = Physics2D.OverlapCircle(GroundChecker.position, GroundCheckRadius, GroundLayerMask);
+        
+        animator.SetBool(IS_GROUNDED, isGrounded);
+        
+    }
     
 }
