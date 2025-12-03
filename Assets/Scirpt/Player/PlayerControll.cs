@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class PlayerControll : MonoBehaviour
 {
-    private const string PLAYER_ASCENDING = "Player Ascending";
-    private const string PLAYER_DESCENDING = "Player Descending";
-    private const string PLAYER_RUN =  "Player Run";
-    private const string PLAYER_START_ASCENDING = "Player Start Ascending";
-    private const string PLAYER_START_DESCENDING = "Player Start Descending";
+    private const string DESCENDING = "Descending";
+    private const string ASCENDING = "Ascending";
+    private const string RUN =  "Run";
+    private const string START_ASCENDING = "Start Ascending";
+    private const string START_DESCENDING = "Start Descending";
 
-    Animator animator;
-    SpriteRenderer spriteRenderer;
+    private Animator animator { get; set; }
+    private SpriteRenderer spriteRenderer {get; set;}
     Rigidbody2D rigidBody;
 
     [Header("Settings")] 
@@ -22,21 +22,67 @@ public class PlayerControll : MonoBehaviour
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        rigidBody = GetComponent<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void Update()
     {
-        moveInput =  Input.GetAxisRaw("Horizontal");
+        moveInput = Input.GetAxisRaw("Horizontal");
+        Move();
+        Flip();
     }
 
     private void Move()
     {
-        animator.SetFloat(PLAYER_RUN,Mathf.Abs(moveInput));
+        Vector2 inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        float absMovement = Mathf.Abs(inputVector.magnitude);
+        animator.SetFloat(RUN,absMovement);
         
+        Vector2 moveVector = new Vector2(inputVector.x, 0.0f);
+        transform.Translate(moveVector * moveSpeed * Time.deltaTime);
+    }
+
+    private void Jump()
+    {
         
     }
+
+    private void Ascending()
+    {
+        
+    }
+
+    private void Descending()
+    {
+        
+    }
+    
+    private void Flip()
+    {
+        // 오른쪽 이동
+        if (moveInput > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        // 왼쪽 이동
+        else if (moveInput < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+    }
+    // private void Flip()
+    // {
+    //     // 오른쪽 이동
+    //     if (moveInput > 0)
+    //     {
+    //         transform.localScale = new Vector3(1, 1, 1);
+    //     }
+    //     // 왼쪽 이동
+    //     else if (moveInput < 0)
+    //     {
+    //         transform.localScale = new Vector3(-1, 1, 1);
+    //     }
+    // }
     
 }
