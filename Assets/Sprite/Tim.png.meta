@@ -1463,8 +1463,8 @@ TextureImporter:
       name: Tim_33
       rect:
         serializedVersion: 2
-        x: 1214
-        y: 1046
+        x: 1213
+        y: 1047
         width: 102
         height: 134
       alignment: 0
@@ -1507,8 +1507,8 @@ TextureImporter:
       name: Tim_35
       rect:
         serializedVersion: 2
-        x: 1446
-        y: 1053
+        x: 1447
+        y: 1054
         width: 96
         height: 122
       alignment: 0
@@ -2255,8 +2255,8 @@ TextureImporter:
       name: Tim_69
       rect:
         serializedVersion: 2
-        x: 1211
-        y: 705
+        x: 1210
+        y: 706
         width: 109
         height: 133
       alignment: 0
@@ -2714,7 +2714,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_113
+      name: Tim_Jump00
       rect:
         serializedVersion: 2
         x: 53
@@ -2736,7 +2736,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_114
+      name: Tim_Jump01
       rect:
         serializedVersion: 2
         x: 173
@@ -2758,11 +2758,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_115
+      name: Tim_Jump02
       rect:
         serializedVersion: 2
-        x: 289
-        y: 369
+        x: 288
+        y: 370
         width: 107
         height: 140
       alignment: 0
@@ -2780,7 +2780,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_116
+      name: Tim_Ascending00
       rect:
         serializedVersion: 2
         x: 492
@@ -2802,7 +2802,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_117
+      name: Tim_Ascending01
       rect:
         serializedVersion: 2
         x: 612
@@ -2824,7 +2824,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_118
+      name: Tim_Ascending02
       rect:
         serializedVersion: 2
         x: 731
@@ -2846,11 +2846,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_119
+      name: Tim_Ascending03
       rect:
         serializedVersion: 2
-        x: 852
-        y: 369
+        x: 853
+        y: 368
         width: 106
         height: 138
       alignment: 0
@@ -2868,7 +2868,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_120
+      name: Tim_Descending00
       rect:
         serializedVersion: 2
         x: 971
@@ -2890,7 +2890,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_121
+      name: Tim_Descending01
       rect:
         serializedVersion: 2
         x: 1091
@@ -2912,7 +2912,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_122
+      name: Tim_Descending02
       rect:
         serializedVersion: 2
         x: 1209
@@ -2934,7 +2934,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_123
+      name: Tim_Descending03
       rect:
         serializedVersion: 2
         x: 1334
@@ -2956,7 +2956,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_124
+      name: Tim_Descending04
       rect:
         serializedVersion: 2
         x: 1455
@@ -3954,19 +3954,7 @@ TextureImporter:
       Tim_110: -2429975392253324251
       Tim_111: 340225212132273964
       Tim_112: 6496772365266891851
-      Tim_113: 3931322086160246792
-      Tim_114: 4257605456940297559
-      Tim_115: 6856153390537510880
-      Tim_116: -5536724977479580112
-      Tim_117: 2594202662807763603
-      Tim_118: 311941590791594628
-      Tim_119: -727478358230641594
       Tim_12: -277535889655133240
-      Tim_120: -5606800036096988826
-      Tim_121: -7193978181543947443
-      Tim_122: 8952231251164644590
-      Tim_123: -8737321348247483065
-      Tim_124: -6311194672815389842
       Tim_125: 5475674041574432142
       Tim_126: 3547091680449042472
       Tim_127: 563979565325066807
@@ -4118,6 +4106,18 @@ TextureImporter:
       Tim_97: 7512929624438211000
       Tim_98: 8635787644246446157
       Tim_99: 3113021843622124720
+      Tim_Ascending00: -5536724977479580112
+      Tim_Ascending01: 2594202662807763603
+      Tim_Ascending02: 311941590791594628
+      Tim_Ascending03: -727478358230641594
+      Tim_Descending00: -5606800036096988826
+      Tim_Descending01: -7193978181543947443
+      Tim_Descending02: 8952231251164644590
+      Tim_Descending03: -8737321348247483065
+      Tim_Descending04: -6311194672815389842
+      Tim_Jump00: 3931322086160246792
+      Tim_Jump01: 4257605456940297559
+      Tim_Jump02: 6856153390537510880
       Tim_Run00: -1429858018177511437
       Tim_Run01: -5030137012121903746
       Tim_Run02: -3294271267593086357

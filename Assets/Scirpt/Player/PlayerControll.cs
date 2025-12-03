@@ -17,6 +17,12 @@ public class PlayerControll : MonoBehaviour
     public float moveSpeed = 3.0f;
     public float jumpForce = 7.0f;
 
+    [Header("Jump Settings")]
+    public float jumpHeight = 0.0f;
+    public float ascendingSpeed = 1.0f;
+    public float descendingSpeed = 1.0f;
+
+    [field: SerializeField] private Transform GroundChecker;
     private float moveInput;
     
 
@@ -43,6 +49,11 @@ public class PlayerControll : MonoBehaviour
         transform.Translate(moveVector * moveSpeed * Time.deltaTime);
     }
 
+
+    private enum JumpState
+    {
+        
+    }
     private void Jump()
     {
         
@@ -50,7 +61,10 @@ public class PlayerControll : MonoBehaviour
 
     private void Ascending()
     {
-        
+        if (jumpHeight > 2.0f)
+        {
+            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        }
     }
 
     private void Descending()

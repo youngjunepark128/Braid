@@ -7,6 +7,8 @@ using Random = UnityEngine.Random;
 public class Player : MonoBehaviour
 {
     public static Player LocalPlayer;
+ 
+    [field : SerializeField] Transform GroundChecker;
     
     private PlayerControll PlayerController { get; set; }
     //
