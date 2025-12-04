@@ -791,6 +791,7 @@ GameObject:
   - component: {fileID: 1123477950}
   - component: {fileID: 1123477953}
   - component: {fileID: 1123477954}
+  - component: {fileID: 1123477955}
   m_Layer: 5
   m_Name: Normal
   m_TagString: Untagged
@@ -951,7 +952,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -960,9 +961,22 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &1123477955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123477948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5df2c8c3b86238a478e322e38f00c245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TimeControll
+  recordTime: 20
 --- !u!1 &1279170329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,8 +1476,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61db4b9cf4a020544907da942991028c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControll
-  moveSpeed: 3
-  jumpHeight: 5
+  moveSpeed: 5
+  jumpHeight: 15
   ascendingSpeed: 3
   descendingSpeed: 3
   <rb>k__BackingField: {fileID: 0}
@@ -1484,7 +1498,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2670fe5f131b4b44098255ca53eb629a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  GroundChecker: {fileID: 0}
 --- !u!1 &1972812650
 GameObject:
   m_ObjectHideFlags: 0
