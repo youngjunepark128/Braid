@@ -3,51 +3,65 @@ using UnityEngine;
 
 public class PlayerControll : MonoBehaviour
 {
-    private const string DESCENDING = "Descending";
-    private const string ASCENDING = "Ascending";
     private const string RUN =  "Run";
-    private const string START_ASCENDING = "Start Ascending";
-    private const string START_DESCENDING = "Start Descending";
-
+    private const string JUMP = "Jump";
+    private static readonly int DESCENDING = Animator.StringToHash("Descending");
+    private static readonly int ASCENDING = Animator.StringToHash("Ascending");    
+    private static readonly int IS_GROUNDED = Animator.StringToHash("IsGrounded");
+    private static readonly int DESCENT = Animator.StringToHash("Descent");
+    
     private Animator animator { get; set; }
     private SpriteRenderer spriteRenderer {get; set;}
 
     [Header("Settings")] 
     public float moveSpeed = 3.0f;
-    public float jumpForce = 7.0f;
-
+    
     [Header("Jump Settings")]
-    public float jumpHeight = 0.0f;
-    public float ascendingSpeed = 1.0f;
-    public float descendingSpeed = 1.0f;
-
+    public float jumpHeight = 5.0f;
+    public float ascendingSpeed = 2.0f;
+    public float descendingSpeed = 2.0f;
+    
+    
+    
+    [Header("Components")]
+    [field: SerializeField] private Rigidbody2D rb { get; set; }
     [field: SerializeField] private Transform GroundChecker;
     [field: SerializeField] private float GroundCheckRadius = 0.1f;
     [field: SerializeField] private LayerMask GroundLayerMask { get; set; }
     private float moveInput;
-    
-    private static readonly int IS_GROUNDED = Animator.StringToHash("IsGrounded");
+    private bool jumpRequest = false;    
 
     private void Awake()
     {
         animator = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        rb = GetComponentInChildren<Rigidbody2D>();
     }
 
     private void Update()
     {
         moveInput = Input.GetAxisRaw("Horizontal");
         Move();
+        Jump();
         Flip();
+        
+        isGrounded = Physics2D.OverlapCircle(GroundChecker.position, GroundCheckRadius, IS_GROUNDED);
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            jumpRequest = true;
+        }
+        if (Input.GetKeyUp(KeyCode.Space) && rb.linearVelocity.y > 0)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
+        }
     }
 
     private void Move()
     {
-        Vector2 inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        float absMovement = Mathf.Abs(inputVector.magnitude);
-        animator.SetFloat(RUN,absMovement);
+        float moveAbs = Mathf.Abs(moveInput);
+        animator.SetFloat(RUN,moveAbs);
         
-        Vector2 moveVector = new Vector2(inputVector.x, 0.0f);
+        Vector2 moveVector = new Vector2(moveInput, 0.0f);
         transform.Translate(moveVector * moveSpeed * Time.deltaTime);
     }
     private void Flip()
@@ -70,50 +84,46 @@ public class PlayerControll : MonoBehaviour
     {
         Grounded,
         Ascending,
-        Descending
+        Descending,
+        Descent,
     }
     
+    private JumpState jumpState = JumpState.Grounded;
     private bool isGrounded = true;
     private bool prevIsGrounded;
+    private Vector3 startPosition;
+    
     private void Jump()
     {
         
-    }
-
-    private void Ascending()
-    {
-        if (jumpHeight > 2.0f)
+        animator.SetFloat("VerticalSpeed", rb.linearVelocity.y);
+        
+        void MoveY(float ySpeed)
         {
-            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+            float newY = transform.position.y + (ySpeed * Time.deltaTime);
+            transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+        }
+        
+    }
+   
+
+    void FixedUpdate() // 물리 연산 적용 (일정한 주기)
+    {
+        // 기존 좌우 이동 코드... (생략)
+
+        // 4. 점프 힘 적용
+        if (jumpRequest)
+        {
+            // Y축 속도를 강제로 jumpForce로 설정 (힘을 더하는 AddForce보다 반응이 빠름)
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpHeight);
+            jumpRequest = false; // 점프 처리 완료
         }
     }
 
-    private void Descending()
+    private void OnDrawGizmosSelected()
     {
-        
+        if (GroundChecker == null) return;
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawWireSphere(GroundChecker.position, GroundCheckRadius);
     }
-
-    private void GroundCheck()
-    {
-        
-    }
-    private void CheckIfGrounded()
-    {
-        //Physics2D : https://developerkoohoo.web.app/Unity/UnityBasic/12.%20Physics2D/
-        
-        // 2D에서 가장 많이 사용하는 Physics2D 함수
-        // Physics2D.Raycast(); Physics2D.RaycastAll(); 
-        // : 선과 겹쳐진(충돌한) 콜라이더가 있는지 검사합니다.
-        // Physics2D.OverlapBox(); Physics2D.OverlapBoxAll();
-        // : 박스(사각형)와 겹쳐진(충돌한) 콜라이더가 있는지 검사합니다.
-        // Physics2D.OverlapCircle(); Physics2D.OverlapCircleAll();
-        // : 원과 겹쳐진(충돌한) 콜라이더가 있는지 검사합니다.
-
-        prevIsGrounded = isGrounded; //isGrounded를 갱신하기 전에 prev에 보관한다
-        isGrounded = Physics2D.OverlapCircle(GroundChecker.position, GroundCheckRadius, GroundLayerMask);
-        
-        animator.SetBool(IS_GROUNDED, isGrounded);
-        
-    }
-    
 }
