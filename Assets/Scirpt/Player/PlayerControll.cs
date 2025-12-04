@@ -5,10 +5,7 @@ public class PlayerControll : MonoBehaviour
 {
     private const string RUN =  "Run";
     private const string JUMP = "Jump";
-    private static readonly int DESCENDING = Animator.StringToHash("Descending");
-    private static readonly int ASCENDING = Animator.StringToHash("Ascending");    
     private static readonly int IS_GROUNDED = Animator.StringToHash("IsGrounded");
-    private static readonly int DESCENT = Animator.StringToHash("Descent");
     
     private Animator animator { get; set; }
     private SpriteRenderer spriteRenderer {get; set;}
@@ -79,17 +76,8 @@ public class PlayerControll : MonoBehaviour
     }
     
     //-------------------------------------------
-
-    private enum JumpState
-    {
-        Grounded,
-        Ascending,
-        Descending,
-        Descent,
-    }
     
-    private JumpState jumpState = JumpState.Grounded;
-    private bool isGrounded = true;
+    private bool isGrounded;
     private bool prevIsGrounded;
     private Vector3 startPosition;
     
@@ -109,14 +97,10 @@ public class PlayerControll : MonoBehaviour
 
     void FixedUpdate() // 물리 연산 적용 (일정한 주기)
     {
-        // 기존 좌우 이동 코드... (생략)
-
-        // 4. 점프 힘 적용
         if (jumpRequest)
         {
-            // Y축 속도를 강제로 jumpForce로 설정 (힘을 더하는 AddForce보다 반응이 빠름)
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpHeight);
-            jumpRequest = false; // 점프 처리 완료
+            jumpRequest = false; 
         }
     }
 
