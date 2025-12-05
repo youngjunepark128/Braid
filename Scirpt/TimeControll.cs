@@ -14,7 +14,6 @@ public class TimeControll : MonoBehaviour
     private List<PointInTime> pointsInTime;
     private Rigidbody2D rb;
     private Animator anim; // 애니메이터 참조 추가
-    [field:SerializeField] private Transform child{ get; set; }
     private Transform current;
     private Vector3 currentRecordPos;
     private Vector3 currentRecordSca;
@@ -27,7 +26,7 @@ public class TimeControll : MonoBehaviour
         anim = GetComponentInChildren<Animator>(); // 컴포넌트 가져오기
         playerControll = GetComponent<PlayerControll>();
         current = transform;
-         currentRecordPos = new Vector3(current.position.x, current.position.y, current.position.z);
+        currentRecordPos = new Vector3(current.position.x, current.position.y, current.position.z);
         
     }
 
