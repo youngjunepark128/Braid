@@ -13,15 +13,8 @@ public class PlayerControll : MonoBehaviour
     [Header("Settings")] 
     public float moveSpeed = 3.0f;
     
-    [Header("Jump Settings")]
-    public float jumpHeight = 5.0f;
-    public float ascendingSpeed = 2.0f;
-    public float descendingSpeed = 2.0f;
-    
-    
-    
     [Header("Components")]
-    [field: SerializeField] private Rigidbody2D rb { get; set; }
+    //[field: SerializeField] private Rigidbody2D rb { get; set; }
     [field: SerializeField] private Transform GroundChecker;
     [field: SerializeField] private float GroundCheckRadius = 0.1f;
     [field: SerializeField] private LayerMask GroundLayerMask { get; set; }
@@ -32,7 +25,7 @@ public class PlayerControll : MonoBehaviour
     {
         animator = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        rb = GetComponentInChildren<Rigidbody2D>();
+        //rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -41,15 +34,10 @@ public class PlayerControll : MonoBehaviour
         Move();
         Jump();
         Flip();
-        
         isGrounded = Physics2D.OverlapCircle(GroundChecker.position, GroundCheckRadius, IS_GROUNDED);
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             jumpRequest = true;
-        }
-        if (Input.GetKeyUp(KeyCode.Space) && rb.linearVelocity.y > 0)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }
     }
 
@@ -58,8 +46,7 @@ public class PlayerControll : MonoBehaviour
         float moveAbs = Mathf.Abs(moveInput);
         animator.SetFloat(RUN,moveAbs);
         
-        Vector2 moveVector = new Vector2(moveInput, 0.0f);
-        transform.Translate(moveVector * moveSpeed * Time.deltaTime);
+        transform.position += Vector3.right*moveInput*moveSpeed;
     }
     private void Flip()
     {
@@ -81,28 +68,35 @@ public class PlayerControll : MonoBehaviour
     private bool prevIsGrounded;
     private Vector3 startPosition;
     
+    [Header("Gravity Settings")]
+    public float gravity = 3.0f;
+    public float currentGravity;
+    
+    [Header("Jump Settings")]
+    public float VerticalSpeed;
+    public float jumpForce = 0.0f;
+
     private void Jump()
     {
+        if(isGrounded) currentGravity = 0.0f;
+        if (jumpRequest)
+        {
+            jumpForce = 15.0f;
+            jumpRequest = false; 
+        }
+        currentGravity += gravity * Time.deltaTime;
+        VerticalSpeed = jumpForce - currentGravity;
+        animator.SetFloat("VerticalSpeed", VerticalSpeed);
         
-        animator.SetFloat("VerticalSpeed", rb.linearVelocity.y);
+        MoveY(VerticalSpeed);
         
         void MoveY(float ySpeed)
         {
             float newY = transform.position.y + (ySpeed * Time.deltaTime);
             transform.position = new Vector3(transform.position.x, newY, transform.position.z);
         }
-        
     }
-   
-
-    void FixedUpdate() // 물리 연산 적용 (일정한 주기)
-    {
-        if (jumpRequest)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpHeight);
-            jumpRequest = false; 
-        }
-    }
+    
 
     private void OnDrawGizmosSelected()
     {
