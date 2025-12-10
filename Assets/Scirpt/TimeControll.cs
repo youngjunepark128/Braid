@@ -41,29 +41,20 @@ public class TimeControll : MonoBehaviour
         if (isRewinding) Rewind();
         else Record();
     }
-
+    
     void StartRewind()
     {
         isRewinding = true;
-        rb.isKinematic = true;
         
         if (playerControll != null) playerControll.enabled = false;
-        // 선택 사항: 되감기 중에는 애니메이터 자체의 속도를 0으로 만들어
-        // 불필요한 연산을 줄이고 완전한 수동 제어 상태로 만듭니다.
         if (anim != null) anim.speed = 0;
     }
 
     void StopRewind()
     {
         isRewinding = false;
-        rb.isKinematic = false;
         
-        // if(pointsInTime.Count > 0)
-        // {
-        //      rb.linearVelocity = pointsInTime[0].velocity;
-        // }
         if (playerControll != null) playerControll.enabled = true;
-        // 애니메이터 속도 복구
         if (anim != null) anim.speed = 1;
     }
     
@@ -72,7 +63,7 @@ public class TimeControll : MonoBehaviour
         if (anim == null) return;
 
         currentRecordPos = new Vector3(current.position.x, current.position.y, current.position.z);
-        currentRecordSca = new Vector3(currentRecordPos.x, currentRecordPos.y, currentRecordPos.z);
+        currentRecordSca = current.localScale;
         AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
 
         pointsInTime.Insert(0, new PointInTime(currentRecordPos, transform.rotation, 
@@ -90,12 +81,11 @@ public class TimeControll : MonoBehaviour
         {
             PointInTime point = pointsInTime[0];
 
-            transform.position = new Vector3(point.position.x, point.position.y, point.position.z);
+            transform.position = point.position;
             transform.rotation = point.rotation;
             
-            if (point.scale.x < 0.5) current.localScale = new Vector3(-1, 1, 1);
-            else current.localScale = new Vector3(1, 1, 1);
-
+            transform.localScale = point.scale;
+            
             // 핵심: 애니메이션 강제 설정
             // Play(상태해시, 레이어인덱스, 정규화된시간)
             // 이 함수는 애니메이터에게 특정 상태의 특정 시점으로 즉시 점프하라고 명령합니다.

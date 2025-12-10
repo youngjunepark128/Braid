@@ -9,6 +9,7 @@ public class PlayerControll : MonoBehaviour
     
     private Animator animator { get; set; }
     private SpriteRenderer spriteRenderer {get; set;}
+    private  Rigidbody2D rigidBody { get; set; }
 
     [Header("Settings")] 
     public float moveSpeed = 3.0f;
@@ -25,16 +26,16 @@ public class PlayerControll : MonoBehaviour
     {
         animator = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        //rb = GetComponent<Rigidbody2D>();
+        rigidBody = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
         moveInput = Input.GetAxisRaw("Horizontal");
+        CheckIfGrounded();
         Move();
         Jump();
         Flip();
-        isGrounded = Physics2D.OverlapCircle(GroundChecker.position, GroundCheckRadius, IS_GROUNDED);
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             jumpRequest = true;
@@ -45,8 +46,7 @@ public class PlayerControll : MonoBehaviour
     {
         float moveAbs = Mathf.Abs(moveInput);
         animator.SetFloat(RUN,moveAbs);
-        
-        transform.position += Vector3.right*moveInput*moveSpeed;
+        transform.position += Vector3.right*moveInput*moveSpeed*Time.deltaTime;
     }
     private void Flip()
     {
@@ -70,25 +70,30 @@ public class PlayerControll : MonoBehaviour
     
     [Header("Gravity Settings")]
     public float gravity = 3.0f;
-    public float currentGravity;
     
     [Header("Jump Settings")]
     public float VerticalSpeed;
-    public float jumpForce = 0.0f;
+    public float jumpForce = 15.0f;
 
     private void Jump()
     {
-        if(isGrounded) currentGravity = 0.0f;
+        if (isGrounded && VerticalSpeed < 14.9f) VerticalSpeed = 0.0f;
         if (jumpRequest)
         {
-            jumpForce = 15.0f;
-            jumpRequest = false; 
+            VerticalSpeed = jumpForce;
+            jumpRequest = false;
+            animator.SetTrigger(JUMP);
         }
-        currentGravity += gravity * Time.deltaTime;
-        VerticalSpeed = jumpForce - currentGravity;
-        animator.SetFloat("VerticalSpeed", VerticalSpeed);
+
+        if (isGrounded == false || VerticalSpeed > 0)
+        {
+            VerticalSpeed -=  gravity * Time.deltaTime;
+        }
         
+        animator.SetFloat("VerticalSpeed", VerticalSpeed);
         MoveY(VerticalSpeed);
+        
+        
         
         void MoveY(float ySpeed)
         {
@@ -97,6 +102,14 @@ public class PlayerControll : MonoBehaviour
         }
     }
     
+    private void CheckIfGrounded()
+    {
+       
+        prevIsGrounded = isGrounded; 
+        isGrounded = Physics2D.OverlapCircle(GroundChecker.position, GroundCheckRadius, GroundLayerMask);
+        animator.SetBool(IS_GROUNDED, isGrounded);
+        
+    }
 
     private void OnDrawGizmosSelected()
     {

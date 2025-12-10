@@ -14,9 +14,5 @@ public class Player : MonoBehaviour
     {
         if (LocalPlayer == null) LocalPlayer = this;
         else Destroy(gameObject);
-        
-        
     }
-
-   
 }
