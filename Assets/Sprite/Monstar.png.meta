@@ -1,0 +1,2456 @@
+fileFormatVersion: 2
+guid: 42c932bf5f2a4ec4a82f7806f424339d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1368025541264718679
+    second: Monstar_0
+  - first:
+      213: 1056351174061171580
+    second: Monstar_1
+  - first:
+      213: 9090205203093568180
+    second: Monstar_2
+  - first:
+      213: -5750836538212015864
+    second: Monstar_3
+  - first:
+      213: 6026591063742243914
+    second: Monstar_4
+  - first:
+      213: 5775272395834113917
+    second: Monstar_5
+  - first:
+      213: 5893563657620956031
+    second: Monstar_6
+  - first:
+      213: -3142000411207318908
+    second: Monstar_7
+  - first:
+      213: -1406614133309309756
+    second: Monstar_8
+  - first:
+      213: 3422787074882755942
+    second: Monstar_9
+  - first:
+      213: -6102445198528951406
+    second: Monstar_10
+  - first:
+      213: 5346556083936655477
+    second: Monstar_11
+  - first:
+      213: 384378559689501576
+    second: Monstar_12
+  - first:
+      213: 1612618300967670367
+    second: Monstar_13
+  - first:
+      213: -8950680153062580872
+    second: Monstar_14
+  - first:
+      213: -4410021407665493485
+    second: Monstar_15
+  - first:
+      213: -1865839666846592540
+    second: Monstar_16
+  - first:
+      213: -8258231021058535083
+    second: Monstar_17
+  - first:
+      213: -204528841682440501
+    second: Monstar_18
+  - first:
+      213: 5512845706848139603
+    second: Monstar_19
+  - first:
+      213: 3763626949919984082
+    second: Monstar_20
+  - first:
+      213: 6850705593227984098
+    second: Monstar_21
+  - first:
+      213: -6795577740143049873
+    second: Monstar_22
+  - first:
+      213: 9051416364066581860
+    second: Monstar_23
+  - first:
+      213: -4551361829512851397
+    second: Monstar_24
+  - first:
+      213: -3629958287684949692
+    second: Monstar_25
+  - first:
+      213: -2217551241273617976
+    second: Monstar_26
+  - first:
+      213: 3971817553493954097
+    second: Monstar_27
+  - first:
+      213: 7582511475892593207
+    second: Monstar_28
+  - first:
+      213: 1263033740343245981
+    second: Monstar_29
+  - first:
+      213: 86549074351024066
+    second: Monstar_30
+  - first:
+      213: 7594166358086351704
+    second: Monstar_31
+  - first:
+      213: -7369977075106713443
+    second: Monstar_32
+  - first:
+      213: -2514895671064557313
+    second: Monstar_33
+  - first:
+      213: -5759336568528155036
+    second: Monstar_34
+  - first:
+      213: -6240510841783401375
+    second: Monstar_35
+  - first:
+      213: -8977168221707210566
+    second: Monstar_36
+  - first:
+      213: 5905572554086896963
+    second: Monstar_37
+  - first:
+      213: -8354010435901244279
+    second: Monstar_38
+  - first:
+      213: -5845105861595567427
+    second: Monstar_39
+  - first:
+      213: -2813852358818580671
+    second: Monstar_40
+  - first:
+      213: 8240253201248359510
+    second: Monstar_41
+  - first:
+      213: -2684104639630014983
+    second: Monstar_42
+  - first:
+      213: 5280845828820428969
+    second: Monstar_43
+  - first:
+      213: 854628204771056093
+    second: Monstar_44
+  - first:
+      213: -1257575477353569038
+    second: Monstar_45
+  - first:
+      213: -2099393884103719094
+    second: Monstar_46
+  - first:
+      213: -2277931856354271444
+    second: Monstar_47
+  - first:
+      213: 3676921612993269739
+    second: Monstar_48
+  - first:
+      213: -4359904580312855689
+    second: Monstar_49
+  - first:
+      213: 6210219919438184089
+    second: Monstar_50
+  - first:
+      213: 9049178682748397053
+    second: Monstar_51
+  - first:
+      213: -5218163129091543546
+    second: Monstar_52
+  - first:
+      213: 7141953234375513323
+    second: Monstar_53
+  - first:
+      213: 8850364146073400115
+    second: Monstar_54
+  - first:
+      213: -6791052795099107203
+    second: Monstar_55
+  - first:
+      213: 6532893533210926080
+    second: Monstar_56
+  - first:
+      213: 8771586959443356446
+    second: Monstar_57
+  - first:
+      213: 6528011626660453197
+    second: Monstar_58
+  - first:
+      213: 7702277524641744795
+    second: Monstar_59
+  - first:
+      213: -1547807734073445059
+    second: Monstar_60
+  - first:
+      213: -6274507270818340558
+    second: Monstar_61
+  - first:
+      213: -186980632967929623
+    second: Monstar_62
+  - first:
+      213: 8202375348748028410
+    second: Monstar_63
+  - first:
+      213: 8310796434938140365
+    second: Monstar_64
+  - first:
+      213: 5628897618056805008
+    second: Monstar_65
+  - first:
+      213: 1875612358558351057
+    second: Monstar_66
+  - first:
+      213: -706493533887277785
+    second: Monstar_67
+  - first:
+      213: 3869616023411334074
+    second: Monstar_68
+  - first:
+      213: -1899607575779285352
+    second: Monstar_69
+  - first:
+      213: -5087441477410068521
+    second: Monstar_70
+  - first:
+      213: 6420287354067452981
+    second: Monstar_71
+  - first:
+      213: -3829836398338623888
+    second: Monstar_72
+  - first:
+      213: -8332530746265826288
+    second: Monstar_73
+  - first:
+      213: -7769298183771335332
+    second: Monstar_74
+  - first:
+      213: 2637638982588266265
+    second: Monstar_75
+  - first:
+      213: 5896983879810504851
+    second: Monstar_76
+  - first:
+      213: 1045216752200987887
+    second: Monstar_77
+  - first:
+      213: -805741036106834981
+    second: Monstar_78
+  - first:
+      213: -329728921968386128
+    second: Monstar_79
+  - first:
+      213: -2928463860139410745
+    second: Monstar_80
+  - first:
+      213: -5275767685598998815
+    second: Monstar_81
+  - first:
+      213: 9187672299073050698
+    second: Monstar_82
+  - first:
+      213: 7657856109512766813
+    second: Monstar_83
+  - first:
+      213: -8146465978845723670
+    second: Monstar_84
+  - first:
+      213: 875248546507035642
+    second: Monstar_85
+  - first:
+      213: 2802519915544576611
+    second: Monstar_86
+  - first:
+      213: -8014278302746868418
+    second: Monstar_87
+  - first:
+      213: -8558894943314087946
+    second: Monstar_88
+  - first:
+      213: 4717867594235554516
+    second: Monstar_89
+  - first:
+      213: 582777797119678200
+    second: Monstar_90
+  - first:
+      213: 7804267665200820801
+    second: Monstar_91
+  - first:
+      213: 7352932065915691263
+    second: Monstar_92
+  - first:
+      213: 8012933407874579674
+    second: Monstar_93
+  - first:
+      213: -2795001214172025602
+    second: Monstar_94
+  - first:
+      213: 7532505085135466765
+    second: Monstar_95
+  - first:
+      213: -3345132668835535007
+    second: Monstar_96
+  - first:
+      213: 5236113762413984533
+    second: Monstar_97
+  - first:
+      213: -3617542349897368871
+    second: Monstar_98
+  - first:
+      213: 1903435055444643953
+    second: Monstar_99
+  - first:
+      213: -2441182444988428598
+    second: Monstar_100
+  - first:
+      213: 1812226535736574390
+    second: Monstar_101
+  - first:
+      213: -2239578708113404131
+    second: Monstar_102
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Walk_00
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 474
+        width: 113
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a44141b40cc30de0800000000000000
+      internalID: -1368025541264718679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_01
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 473
+        width: 113
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73abf7cbc9e8ae00800000000000000
+      internalID: 1056351174061171580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_02
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 474
+        width: 115
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4babcc16875e62e70800000000000000
+      internalID: 9090205203093568180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_03
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 473
+        width: 114
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801298243ace030b0800000000000000
+      internalID: -5750836538212015864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_04
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 474
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4466e864a0c2a350800000000000000
+      internalID: 6026591063742243914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_05
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 473
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fbfc235a3e52050800000000000000
+      internalID: 5775272395834113917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_06
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 475
+        width: 113
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7326a1dbe42ac150800000000000000
+      internalID: 5893563657620956031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_07
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 473
+        width: 114
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4824bd5e54f5564d0800000000000000
+      internalID: -3142000411207318908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_22
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 525
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63c833cc0241b1a0800000000000000
+      internalID: -6795577740143049873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_24
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 525
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b305d9bb78056d0c0800000000000000
+      internalID: -4551361829512851397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_26
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 525
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c1d8a825eca931e0800000000000000
+      internalID: -2217551241273617976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_27
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 525
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e0ba4750bbe1730800000000000000
+      internalID: 3971817553493954097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_28
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 525
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 732a6e1730e7a3960800000000000000
+      internalID: 7582511475892593207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_29
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 525
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9cfd78be72378110800000000000000
+      internalID: 1263033740343245981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_30
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 525
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7e450bceb733100800000000000000
+      internalID: 86549074351024066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_31
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 525
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b75fa2116e36960800000000000000
+      internalID: 7594166358086351704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_32
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 525
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90fd73e5e498b990800000000000000
+      internalID: -7369977075106713443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_33
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 525
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8870f26bb491dd0800000000000000
+      internalID: -2514895671064557313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_08
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 336
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e46fab7e9b210b0800000000000000
+      internalID: -5759336568528155036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_09
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 334
+        width: 114
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164c68af3704569a0800000000000000
+      internalID: -6240510841783401375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_10
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 336
+        width: 115
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab07730c011ba6380800000000000000
+      internalID: -8977168221707210566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_11
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 335
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34555a9e2fec4f150800000000000000
+      internalID: 5905572554086896963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_12
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 336
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c333e15c7901c80800000000000000
+      internalID: -8354010435901244279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_13
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 334
+        width: 112
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbaea05003302eea0800000000000000
+      internalID: -5845105861595567427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_14
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 337
+        width: 113
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1473936203033f8d0800000000000000
+      internalID: -2813852358818580671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_15
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 335
+        width: 112
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6541fa7b0a24b5270800000000000000
+      internalID: 8240253201248359510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_42
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 397
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f500ee1d0520cad0800000000000000
+      internalID: -2684104639630014983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_43
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 395
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8e17c5d45594940800000000000000
+      internalID: 5280845828820428969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_44
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 395
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9986003df3cdb00800000000000000
+      internalID: 854628204771056093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_45
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 397
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4291a24c13c8ee0800000000000000
+      internalID: -1257575477353569038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_46
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 397
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a47ce5ea2647dd2e0800000000000000
+      internalID: -2099393884103719094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_47
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 397
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f157fab092360e0800000000000000
+      internalID: -2277931856354271444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_48
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 394
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef8b61d9bc070330800000000000000
+      internalID: 3676921612993269739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_49
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 344
+        width: 87
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b8adb42e18e73c0800000000000000
+      internalID: -4359904580312855689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_50
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 376
+        width: 124
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99efa231d122f2650800000000000000
+      internalID: 6210219919438184089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_51
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 379
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df5614e3114259d70800000000000000
+      internalID: 9049178682748397053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_52
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 379
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e2576f74c5597b0800000000000000
+      internalID: -5218163129091543546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_53
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 379
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4976180a05d1360800000000000000
+      internalID: 7141953234375513323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_54
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 379
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333fe83bc4fc2da70800000000000000
+      internalID: 8850364146073400115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_55
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 363
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70b131a67551c1a0800000000000000
+      internalID: -6791052795099107203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_56
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 363
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00cdb724e0089aa50800000000000000
+      internalID: 6532893533210926080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_57
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 363
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1be112addfeab970800000000000000
+      internalID: 8771586959443356446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_58
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 363
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b57b0dcf7289a50800000000000000
+      internalID: 6528011626660453197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_59
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 360
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b970fb9a99cf3ea60800000000000000
+      internalID: 7702277524641744795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_60
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 363
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3533f50115158ae0800000000000000
+      internalID: -1547807734073445059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_61
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 363
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231644681e87ce8a0800000000000000
+      internalID: -6274507270818340558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_62
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 363
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0a110ea16b76df0800000000000000
+      internalID: -186980632967929623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_63
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 361
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af90c80fbe0b4d170800000000000000
+      internalID: 8202375348748028410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_64
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 360
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc612193351e55370800000000000000
+      internalID: 8310796434938140365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_65
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 363
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a71597f8cdd1e40800000000000000
+      internalID: 5628897618056805008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_66
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 363
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1def330b083870a10800000000000000
+      internalID: 1875612358558351057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_67
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 363
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 725d984cfd70236f0800000000000000
+      internalID: -706493533887277785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_68
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 363
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb979c6543a3b530800000000000000
+      internalID: 3869616023411334074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_69
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 363
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 896e80179fc33a5e0800000000000000
+      internalID: -1899607575779285352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_70
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 344
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d762634ee6c569b0800000000000000
+      internalID: -5087441477410068521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_71
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 347
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5348f171551791950800000000000000
+      internalID: 6420287354067452981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_72
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 347
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0763a294610b9dac0800000000000000
+      internalID: -3829836398338623888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_73
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 347
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c0ec41f67ec5c80800000000000000
+      internalID: -8332530746265826288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_74
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 347
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55d8322778ed2490800000000000000
+      internalID: -7769298183771335332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_75
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 344
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91775ea0ea6ca9420800000000000000
+      internalID: 2637638982588266265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_76
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 347
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3985f4a589b46d150800000000000000
+      internalID: 5896983879810504851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_77
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 347
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe43a3c291b518e00800000000000000
+      internalID: 1045216752200987887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_78
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 347
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb95e1fbce61d4f0800000000000000
+      internalID: -805741036106834981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_79
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 347
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bfd6edda419c6bf0800000000000000
+      internalID: -329728921968386128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_80
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 347
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca32d682a10c57d0800000000000000
+      internalID: -2928463860139410745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_81
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 347
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee036efd35b8c6b0800000000000000
+      internalID: -5275767685598998815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_82
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 347
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4812f2174b218f70800000000000000
+      internalID: 9187672299073050698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_83
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 185
+        width: 119
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55309cfe8b264a60800000000000000
+      internalID: 7657856109512766813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_84
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 182
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae38814aa50f1fe80800000000000000
+      internalID: -8146465978845723670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_85
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 295
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af39ab07ae1852c00800000000000000
+      internalID: 875248546507035642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_86
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 179
+        width: 115
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3620ef9c30d84e620800000000000000
+      internalID: 2802519915544576611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_87
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 179
+        width: 115
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3507a9585097c090800000000000000
+      internalID: -8014278302746868418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monstar_88
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 181
+        width: 115
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff60e16562b83980800000000000000
+      internalID: -8558894943314087946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attacked_00
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 182
+        width: 114
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4daacb3a49b397140800000000000000
+      internalID: 4717867594235554516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attacked_01
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 181
+        width: 114
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f69d4c9151761800800000000000000
+      internalID: 582777797119678200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attacked_02
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 180
+        width: 115
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 142bc5cb7145e4c60800000000000000
+      internalID: 7804267665200820801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attacked_03
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 179
+        width: 116
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0eb76a1ccda0660800000000000000
+      internalID: 7352932065915691263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ascent_00
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 18
+        width: 117
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc7939ea78a33f60800000000000000
+      internalID: 8012933407874579674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ascent_01
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 18
+        width: 117
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efcad7a44392639d0800000000000000
+      internalID: -2795001214172025602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ascent_02
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 18
+        width: 117
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01b25c4775d88860800000000000000
+      internalID: 7532505085135466765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ascending_00
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 18
+        width: 117
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 167e08b9f83b391d0800000000000000
+      internalID: -3345132668835535007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ascending_01
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 18
+        width: 117
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b383c89b96aa840800000000000000
+      internalID: 5236113762413984533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Descending_00
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 22
+        width: 117
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da7f6a3668ebcdc0800000000000000
+      internalID: -3617542349897368871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Descending_01
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 21
+        width: 118
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170ddcc191c5a6a10800000000000000
+      internalID: 1903435055444643953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Descent_00
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 21
+        width: 115
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace8b8e008d2f1ed0800000000000000
+      internalID: -2441182444988428598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Descent_01
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 21
+        width: 119
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b18d13ce62562910800000000000000
+      internalID: 1812226535736574390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Descent_02
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 18
+        width: 118
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f4f50e70b6be0e0800000000000000
+      internalID: -2239578708113404131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 790e9204096f899448f70c41ce9a5810
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ascending_00: -3345132668835535007
+      Ascending_01: 5236113762413984533
+      Ascent_00: 8012933407874579674
+      Ascent_01: -2795001214172025602
+      Ascent_02: 7532505085135466765
+      Attacked_00: 4717867594235554516
+      Attacked_01: 582777797119678200
+      Attacked_02: 7804267665200820801
+      Attacked_03: 7352932065915691263
+      Descending_00: -3617542349897368871
+      Descending_01: 1903435055444643953
+      Descent_00: -2441182444988428598
+      Descent_01: 1812226535736574390
+      Descent_02: -2239578708113404131
+      Monstar_10: -6102445198528951406
+      Monstar_11: 5346556083936655477
+      Monstar_12: 384378559689501576
+      Monstar_13: 1612618300967670367
+      Monstar_14: -8950680153062580872
+      Monstar_15: -4410021407665493485
+      Monstar_16: -1865839666846592540
+      Monstar_17: -8258231021058535083
+      Monstar_18: -204528841682440501
+      Monstar_19: 5512845706848139603
+      Monstar_20: 3763626949919984082
+      Monstar_21: 6850705593227984098
+      Monstar_22: -6795577740143049873
+      Monstar_23: 9051416364066581860
+      Monstar_24: -4551361829512851397
+      Monstar_25: -3629958287684949692
+      Monstar_26: -2217551241273617976
+      Monstar_27: 3971817553493954097
+      Monstar_28: 7582511475892593207
+      Monstar_29: 1263033740343245981
+      Monstar_30: 86549074351024066
+      Monstar_31: 7594166358086351704
+      Monstar_32: -7369977075106713443
+      Monstar_33: -2514895671064557313
+      Monstar_42: -2684104639630014983
+      Monstar_43: 5280845828820428969
+      Monstar_44: 854628204771056093
+      Monstar_45: -1257575477353569038
+      Monstar_46: -2099393884103719094
+      Monstar_47: -2277931856354271444
+      Monstar_48: 3676921612993269739
+      Monstar_49: -4359904580312855689
+      Monstar_50: 6210219919438184089
+      Monstar_51: 9049178682748397053
+      Monstar_52: -5218163129091543546
+      Monstar_53: 7141953234375513323
+      Monstar_54: 8850364146073400115
+      Monstar_55: -6791052795099107203
+      Monstar_56: 6532893533210926080
+      Monstar_57: 8771586959443356446
+      Monstar_58: 6528011626660453197
+      Monstar_59: 7702277524641744795
+      Monstar_60: -1547807734073445059
+      Monstar_61: -6274507270818340558
+      Monstar_62: -186980632967929623
+      Monstar_63: 8202375348748028410
+      Monstar_64: 8310796434938140365
+      Monstar_65: 5628897618056805008
+      Monstar_66: 1875612358558351057
+      Monstar_67: -706493533887277785
+      Monstar_68: 3869616023411334074
+      Monstar_69: -1899607575779285352
+      Monstar_70: -5087441477410068521
+      Monstar_71: 6420287354067452981
+      Monstar_72: -3829836398338623888
+      Monstar_73: -8332530746265826288
+      Monstar_74: -7769298183771335332
+      Monstar_75: 2637638982588266265
+      Monstar_76: 5896983879810504851
+      Monstar_77: 1045216752200987887
+      Monstar_78: -805741036106834981
+      Monstar_79: -329728921968386128
+      Monstar_8: -1406614133309309756
+      Monstar_80: -2928463860139410745
+      Monstar_81: -5275767685598998815
+      Monstar_82: 9187672299073050698
+      Monstar_83: 7657856109512766813
+      Monstar_84: -8146465978845723670
+      Monstar_85: 875248546507035642
+      Monstar_86: 2802519915544576611
+      Monstar_87: -8014278302746868418
+      Monstar_88: -8558894943314087946
+      Monstar_9: 3422787074882755942
+      Walk_00: -1368025541264718679
+      Walk_01: 1056351174061171580
+      Walk_02: 9090205203093568180
+      Walk_03: -5750836538212015864
+      Walk_04: 6026591063742243914
+      Walk_05: 5775272395834113917
+      Walk_06: 5893563657620956031
+      Walk_07: -3142000411207318908
+      Walk_08: -5759336568528155036
+      Walk_09: -6240510841783401375
+      Walk_10: -8977168221707210566
+      Walk_11: 5905572554086896963
+      Walk_12: -8354010435901244279
+      Walk_13: -5845105861595567427
+      Walk_14: -2813852358818580671
+      Walk_15: 8240253201248359510
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

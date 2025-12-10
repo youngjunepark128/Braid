@@ -10,7 +10,9 @@ public class TimeControll : MonoBehaviour
     [Header("Settings")]
     public float recordTime = 5f;
 
-    private bool isRewinding = false;
+    [Header("RewindingDisableScripts")] 
+    public MonoBehaviour[] ScriptsDisabled;
+    
     private List<PointInTime> pointsInTime;
     private Rigidbody2D rb;
     private Animator anim; // 애니메이터 참조 추가
@@ -24,44 +26,47 @@ public class TimeControll : MonoBehaviour
         pointsInTime = new List<PointInTime>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>(); // 컴포넌트 가져오기
-        playerControll = GetComponent<PlayerControll>();
         current = transform;
         currentRecordPos = new Vector3(current.position.x, current.position.y, current.position.z);
         
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftShift)) StartRewind();
-        if (Input.GetKeyUp(KeyCode.LeftShift)) StopRewind();
-    }
+    // void Update()
+    // {
+    //     // if (Input.GetKeyDown(KeyCode.LeftShift)) StartRewind();
+    //     // if (Input.GetKeyUp(KeyCode.LeftShift)) StopRewind();
+    // }
 
     void FixedUpdate()
     {
-        if (isRewinding) Rewind();
+        if (TimeManager.isRewinding) Rewind();
         else Record();
     }
     
-    void StartRewind()
-    {
-        isRewinding = true;
-        
-        if (playerControll != null) playerControll.enabled = false;
-        if (anim != null) anim.speed = 0;
-    }
-
-    void StopRewind()
-    {
-        isRewinding = false;
-        
-        if (playerControll != null) playerControll.enabled = true;
-        if (anim != null) anim.speed = 1;
-    }
+    // void StartRewind()
+    // {
+    //     TimeManager.isRewinding = true;
+    //     
+    //     if (playerControll != null) playerControll.enabled = false;
+    //     if (anim != null) anim.speed = 0;
+    // }
+    //
+    // void StopRewind()
+    // {
+    //     TimeManager.isRewinding = false;
+    //     
+    //     if (playerControll != null) playerControll.enabled = true;
+    //     if (anim != null) anim.speed = 1;
+    // }
     
     void Record()
     {
         if (anim == null) return;
-
+        if (ScriptsDisabled != null)
+        {
+            foreach (var script in ScriptsDisabled)
+                if (script != null) script.enabled = true;
+        }
         currentRecordPos = new Vector3(current.position.x, current.position.y, current.position.z);
         currentRecordSca = current.localScale;
         AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
@@ -77,6 +82,11 @@ public class TimeControll : MonoBehaviour
 
     void Rewind()
     {
+        if (ScriptsDisabled != null)
+        {
+            foreach (var script in ScriptsDisabled)
+                if (script != null) script.enabled = false;
+        }
         if (pointsInTime.Count > 0 && anim != null)
         {
             PointInTime point = pointsInTime[0];
@@ -94,7 +104,6 @@ public class TimeControll : MonoBehaviour
         }
         else
         {
-            StopRewind();
         }
     }
 }

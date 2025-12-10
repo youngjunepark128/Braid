@@ -145,6 +145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeControll
   recordTime: 5
+  ScriptsDisabled:
+  - {fileID: 1165042501749764280}
 --- !u!50 &8097671312715352227
 Rigidbody2D:
   serializedVersion: 5
