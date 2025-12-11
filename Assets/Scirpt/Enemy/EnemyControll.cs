@@ -15,14 +15,15 @@ public class EnemyController : MonoBehaviour
     [field: SerializeField] private Transform GroundChecker;
     [field: SerializeField] private float GroundCheckRadius = 0.1f;
     [field: SerializeField] private LayerMask GroundLayerMask { get; set; }
-    
     [field: SerializeField] private Transform WallChecker;
     [field: SerializeField] private float WallCheckRadius = 0.1f;
     [field: SerializeField] private LayerMask WallLayerMask { get; set; }
+    [field : SerializeField] private CapsuleCollider2D coll;
     public float walkSpeed =3.0f;
     private bool jumpRequest = false;    
     
     private bool IsWalled = false;
+    private bool IsAttacked = false;
 
     private void Awake()
     {
@@ -33,11 +34,11 @@ public class EnemyController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (IsAttacked) return;
         CheckIfGrounded();
         CheckIfWalled();
         Move();
         Jump();
-        
         if(IsWalled) Flip();
     }
 
@@ -79,6 +80,7 @@ public class EnemyController : MonoBehaviour
     private static readonly int ISJUMPED = Animator.StringToHash("IsJumping");
     private static readonly int IS_GROUNDED = Animator.StringToHash("IsGrounded");
     private static readonly int IS_WALLED = Animator.StringToHash("IsWalled");
+    private static readonly int IS_ATTACKED = Animator.StringToHash("IsAttacked");
     
     private void Jump()
     {
@@ -106,7 +108,60 @@ public class EnemyController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, newY, transform.position.z);
         }
     }
+    //--------------------------------------------------
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerControll player = collision.gameObject.GetComponent<PlayerControll>();
+            if (player.VerticalSpeed <= 0 && player.transform.position.y > transform.position.y + 0.3f)
+            {
+                player.Bounce();
+                Die();
+            }
+            else
+            {
+                player.TakeDamage();
+            }
+        }
+    }
+
+    void Die()
+    {
+        animator.SetBool(IS_ATTACKED, true);
+        IsAttacked = true;
+        coll.enabled = false;
+        Vector3 scaler = transform.localScale;
+        scaler.y *= -1; 
+        transform.localScale = scaler;
+        StartCoroutine(DeadFallSequence());
+    }
     
+    IEnumerator DeadFallSequence()
+    {
+        float timer = 0f;
+        float duration = 3.0f; // 3초 동안 떨어짐 (이후엔 화면 밖일 테니)
+        
+        // 초기 속도 설정 (위로 살짝 튐)
+        float verticalVelocity = 5.0f; 
+
+        while (timer < duration)
+        {
+            // 되감기 중이라면 코루틴 강제 중단 (시스템에 맡김)
+            if (TimeManager.isRewinding) yield break;
+
+            // 물리 공식: v = v0 + at
+            verticalVelocity += gravity * Time.deltaTime;
+            
+            // 위치 이동: y = y + vt
+            transform.position += Vector3.up * verticalVelocity * Time.deltaTime;
+
+            timer += Time.deltaTime;
+            yield return null; // 다음 프레임까지 대기
+        }
+    }
+    //---------------------------------------------------
     private void CheckIfGrounded()
     {
        

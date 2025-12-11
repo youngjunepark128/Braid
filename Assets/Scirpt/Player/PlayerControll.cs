@@ -61,6 +61,20 @@ public class PlayerControll : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
         }
     }
+    //-------------------------------------------
+    // PlayerControll.cs 내용 중 추가
+
+    public void Bounce()
+    {
+        VerticalSpeed = jumpForce * 0.7f; 
+        animator.SetTrigger(JUMP); 
+        isGrounded = false;
+    }
+    public void TakeDamage()
+    {
+        Debug.Log("플레이어 사망!");
+        
+    }
     
     //-------------------------------------------
     
