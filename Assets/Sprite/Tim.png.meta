@@ -1460,7 +1460,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_33
+      name: Tim_Attacked00
       rect:
         serializedVersion: 2
         x: 1213
@@ -1482,7 +1482,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_34
+      name: Tim_Attacked01
       rect:
         serializedVersion: 2
         x: 1332
@@ -1504,7 +1504,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_35
+      name: Tim_Attacked02
       rect:
         serializedVersion: 2
         x: 1447
@@ -1526,7 +1526,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_36
+      name: Tim_Attacked03
       rect:
         serializedVersion: 2
         x: 1558
@@ -1548,7 +1548,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_37
+      name: Tim_Attacked04
       rect:
         serializedVersion: 2
         x: 1683
@@ -1570,7 +1570,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_38
+      name: Tim_Attacked05
       rect:
         serializedVersion: 2
         x: 1795
@@ -1592,7 +1592,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_39
+      name: Tim_Attacked10
       rect:
         serializedVersion: 2
         x: 2059
@@ -1614,7 +1614,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_40
+      name: Tim_Attacked11
       rect:
         serializedVersion: 2
         x: 2211
@@ -1636,7 +1636,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_41
+      name: Tim_Attacked12
       rect:
         serializedVersion: 2
         x: 2358
@@ -3440,7 +3440,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_186
+      name: Tim_NextMap00
       rect:
         serializedVersion: 2
         x: 78
@@ -3462,7 +3462,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_187
+      name: Tim_NextMap01
       rect:
         serializedVersion: 2
         x: 169
@@ -3484,7 +3484,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_188
+      name: Tim_NextMap02
       rect:
         serializedVersion: 2
         x: 259
@@ -3506,7 +3506,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_189
+      name: Tim_NextMap03
       rect:
         serializedVersion: 2
         x: 350
@@ -3528,11 +3528,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_190
+      name: Tim_NextMap04
       rect:
         serializedVersion: 2
-        x: 444
-        y: 32
+        x: 442
+        y: 33
         width: 82
         height: 140
       alignment: 0
@@ -3550,7 +3550,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_191
+      name: Tim_Wait00
       rect:
         serializedVersion: 2
         x: 628
@@ -3572,7 +3572,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_192
+      name: Tim_Wait01
       rect:
         serializedVersion: 2
         x: 721
@@ -3594,7 +3594,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_193
+      name: Tim_Wait02
       rect:
         serializedVersion: 2
         x: 818
@@ -3616,7 +3616,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_194
+      name: Tim_Wait03
       rect:
         serializedVersion: 2
         x: 911
@@ -3638,7 +3638,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_195
+      name: Tim_Wait04
       rect:
         serializedVersion: 2
         x: 1018
@@ -3660,7 +3660,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_196
+      name: Tim_Wait05
       rect:
         serializedVersion: 2
         x: 1121
@@ -3682,7 +3682,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_197
+      name: Tim_Wait06
       rect:
         serializedVersion: 2
         x: 1217
@@ -3704,7 +3704,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_198
+      name: Tim_Wait07
       rect:
         serializedVersion: 2
         x: 1319
@@ -3726,7 +3726,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tim_199
+      name: Tim_Wait08
       rect:
         serializedVersion: 2
         x: 1414
@@ -4022,21 +4022,7 @@ TextureImporter:
       Tim_183: 4711381401616303267
       Tim_184: -5655286975673375212
       Tim_185: 6872396391740457713
-      Tim_186: -1033961411043661530
-      Tim_187: -7305865318777402537
-      Tim_188: 8883054909641045017
-      Tim_189: 5624015669235204129
       Tim_19: 3162258206430625054
-      Tim_190: -6976658539794209772
-      Tim_191: 8426260659278087831
-      Tim_192: 1210465984475917714
-      Tim_193: 4147384914107805301
-      Tim_194: -1171151563517889020
-      Tim_195: 7268276082672395006
-      Tim_196: -3170000973456758752
-      Tim_197: 4495839093418135417
-      Tim_198: -8929678847092636129
-      Tim_199: -5959828837705350742
       Tim_2: 927798065979021974
       Tim_20: -4563255511036137945
       Tim_200: 5515725039091124257
@@ -4051,16 +4037,7 @@ TextureImporter:
       Tim_22: 1942316350629166093
       Tim_23: 646087104855745411
       Tim_3: 5304816828257827700
-      Tim_33: -4687144815673417215
-      Tim_34: 8167633138246731128
-      Tim_35: 6802292844667622753
-      Tim_36: -2476540133703369833
-      Tim_37: -1822272596967737182
-      Tim_38: 636628003956004868
-      Tim_39: 6019132466796148792
       Tim_4: 1567403875091036362
-      Tim_40: -9095281563299937751
-      Tim_41: -1423358929548314488
       Tim_5: -2087970505432677235
       Tim_51: -4276935878499051066
       Tim_52: 6506966851022909973
@@ -4107,6 +4084,15 @@ TextureImporter:
       Tim_98: 8635787644246446157
       Tim_99: 3113021843622124720
       Tim_Ascending03: -727478358230641594
+      Tim_Attacked00: -4687144815673417215
+      Tim_Attacked01: 8167633138246731128
+      Tim_Attacked02: 6802292844667622753
+      Tim_Attacked03: -2476540133703369833
+      Tim_Attacked04: -1822272596967737182
+      Tim_Attacked05: 636628003956004868
+      Tim_Attacked10: 6019132466796148792
+      Tim_Attacked11: -9095281563299937751
+      Tim_Attacked12: -1423358929548314488
       Tim_Descending00: -5606800036096988826
       Tim_Descending01: -7193978181543947443
       Tim_Descending02: 8952231251164644590
@@ -4118,6 +4104,11 @@ TextureImporter:
       Tim_Jump03: -5536724977479580112
       Tim_Jump04: 2594202662807763603
       Tim_Jump05: 311941590791594628
+      Tim_NextMap00: -1033961411043661530
+      Tim_NextMap01: -7305865318777402537
+      Tim_NextMap02: 8883054909641045017
+      Tim_NextMap03: 5624015669235204129
+      Tim_NextMap04: -6976658539794209772
       Tim_Run00: -1429858018177511437
       Tim_Run01: -5030137012121903746
       Tim_Run02: -3294271267593086357
@@ -4145,6 +4136,15 @@ TextureImporter:
       Tim_Run24: -6888849885479413403
       Tim_Run25: 3109758241607009363
       Tim_Run26: 7675923185610711842
+      Tim_Wait00: 8426260659278087831
+      Tim_Wait01: 1210465984475917714
+      Tim_Wait02: 4147384914107805301
+      Tim_Wait03: -1171151563517889020
+      Tim_Wait04: 7268276082672395006
+      Tim_Wait05: -3170000973456758752
+      Tim_Wait06: 4495839093418135417
+      Tim_Wait07: -8929678847092636129
+      Tim_Wait08: -5959828837705350742
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

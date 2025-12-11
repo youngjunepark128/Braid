@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     [Header("Settings")] 
-    [SerializeField] private float moveSpeed { get; set; }
     private Animator animator { get; set; }
     private SpriteRenderer spriteRenderer {get; set;}
     private  Rigidbody2D rigidBody { get; set; }
@@ -16,7 +15,11 @@ public class EnemyController : MonoBehaviour
     [field: SerializeField] private Transform GroundChecker;
     [field: SerializeField] private float GroundCheckRadius = 0.1f;
     [field: SerializeField] private LayerMask GroundLayerMask { get; set; }
-    private float moveInput;
+    
+    [field: SerializeField] private Transform WallChecker;
+    [field: SerializeField] private float WallCheckRadius = 0.1f;
+    [field: SerializeField] private LayerMask WallLayerMask { get; set; }
+    public float walkSpeed =3.0f;
     private bool jumpRequest = false;    
     
     private bool IsWalled = false;
@@ -28,30 +31,35 @@ public class EnemyController : MonoBehaviour
         rigidBody = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         CheckIfGrounded();
+        CheckIfWalled();
         Move();
         Jump();
+        
         if(IsWalled) Flip();
     }
 
+    
     private void Move()
     {
-        float moveAbs = Mathf.Abs(moveInput);
-        transform.position += Vector3.right*moveInput*moveSpeed*Time.deltaTime;
+        transform.position += Vector3.right*walkSpeed*Time.deltaTime;
     }
     private void Flip()
     {
-        // 오른쪽 이동
-        if (moveInput > 0)
+        // 오른쪽 반전
+        if (transform.localScale.x < 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
+            walkSpeed *= -1;
         }
-        // 왼쪽 이동
-        else if (moveInput < 0)
+        // 왼쪽 반전
+        else if (transform.localScale.x > 0)
         {
             transform.localScale = new Vector3(-1, 1, 1);
+            walkSpeed *= -1;
+            IsWalled = false;
         }
     }
     
@@ -70,6 +78,7 @@ public class EnemyController : MonoBehaviour
 
     private static readonly int ISJUMPED = Animator.StringToHash("IsJumping");
     private static readonly int IS_GROUNDED = Animator.StringToHash("IsGrounded");
+    private static readonly int IS_WALLED = Animator.StringToHash("IsWalled");
     
     private void Jump()
     {
@@ -106,13 +115,20 @@ public class EnemyController : MonoBehaviour
         animator.SetBool(IS_GROUNDED, isGrounded);
     }
 
+    private void CheckIfWalled()
+    {
+        IsWalled = Physics2D.OverlapCircle(WallChecker.position, WallCheckRadius, WallLayerMask);
+        animator.SetBool(IS_WALLED, IsWalled);
+    }
+
     private void OnDrawGizmosSelected()
     {
         if (GroundChecker == null) return;
         Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(GroundChecker.position, GroundCheckRadius);
+        
+        if (WallChecker == null) return;
+        Gizmos.color = Color.yellowGreen;
+        Gizmos.DrawWireSphere(WallChecker.position, WallCheckRadius);
     }
-    
-
-    
 }
