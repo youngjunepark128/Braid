@@ -30,6 +30,7 @@ public class EnemyController : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         rigidBody = GetComponent<Rigidbody2D>();
+        coll = GetComponent<CapsuleCollider2D>();
     }
 
     private void FixedUpdate()
