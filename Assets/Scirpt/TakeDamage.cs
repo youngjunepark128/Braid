@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using AllIn1SpriteShader;
 using UnityEngine;
 
 public class TakeDamage : MonoBehaviour
@@ -12,7 +13,7 @@ public class TakeDamage : MonoBehaviour
 
    private Rigidbody2D rigidBody;
    private CapsuleCollider2D col;
-   private Animator animator;
+   private Animator animator; 
    
    private static readonly int IS_ATTACKED = Animator.StringToHash("IsAttacked");
 

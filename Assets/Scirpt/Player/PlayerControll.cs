@@ -6,6 +6,7 @@ public class PlayerControll : MonoBehaviour
     private const string RUN =  "Run";
     private const string JUMP = "Jump";
     private static readonly int IS_GROUNDED = Animator.StringToHash("IsGrounded");
+    private static readonly int WAIT_TIME = Animator.StringToHash("WaitTime");
     
     private Animator animator { get; set; }
     private SpriteRenderer spriteRenderer {get; set;}
@@ -14,6 +15,7 @@ public class PlayerControll : MonoBehaviour
 
     [Header("Settings")] 
     public float moveSpeed = 3.0f;
+    public float waitTime = 0.0f;
     
     [Header("Components")]
     //[field: SerializeField] private Rigidbody2D rb { get; set; }
@@ -44,6 +46,8 @@ public class PlayerControll : MonoBehaviour
         {
             jumpRequest = true;
         }
+        waitTime += Time.deltaTime;
+        animator.SetFloat(WAIT_TIME, waitTime);
     }
 
     private void Move()
