@@ -13,13 +13,18 @@ public class TimeControll : MonoBehaviour
     [Header("RewindingDisableScripts")] 
     public MonoBehaviour[] ScriptsDisabled;
     
+    
+    [Header("Components")]
     private List<PointInTime> pointsInTime;
+    private CapsuleCollider2D col;
     private Rigidbody2D rb;
     private Animator anim; // 애니메이터 참조 추가
     private Transform current;
     private Vector3 currentRecordPos;
     private Vector3 currentRecordSca;
     private PlayerControll playerControll { get; set; } 
+    private static readonly int IS_ATTACKED = Animator.StringToHash("IsAttacked");
+    
 
     void Start()
     {
@@ -28,36 +33,14 @@ public class TimeControll : MonoBehaviour
         anim = GetComponentInChildren<Animator>(); // 컴포넌트 가져오기
         current = transform;
         currentRecordPos = new Vector3(current.position.x, current.position.y, current.position.z);
-        
+        col = GetComponent<CapsuleCollider2D>();
     }
-
-    // void Update()
-    // {
-    //     // if (Input.GetKeyDown(KeyCode.LeftShift)) StartRewind();
-    //     // if (Input.GetKeyUp(KeyCode.LeftShift)) StopRewind();
-    // }
 
     void FixedUpdate()
     {
         if (TimeManager.isRewinding) Rewind();
         else Record();
     }
-    
-    // void StartRewind()
-    // {
-    //     TimeManager.isRewinding = true;
-    //     
-    //     if (playerControll != null) playerControll.enabled = false;
-    //     if (anim != null) anim.speed = 0;
-    // }
-    //
-    // void StopRewind()
-    // {
-    //     TimeManager.isRewinding = false;
-    //     
-    //     if (playerControll != null) playerControll.enabled = true;
-    //     if (anim != null) anim.speed = 1;
-    // }
     
     void Record()
     {
@@ -70,9 +53,11 @@ public class TimeControll : MonoBehaviour
         currentRecordPos = new Vector3(current.position.x, current.position.y, current.position.z);
         currentRecordSca = current.localScale;
         AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
+        bool IsAttackedState = anim.GetBool(IS_ATTACKED);
+        bool CollState = col ? col.enabled : true;
 
         pointsInTime.Insert(0, new PointInTime(currentRecordPos, transform.rotation, 
-            currentRecordSca, stateInfo.shortNameHash, stateInfo.normalizedTime));
+            currentRecordSca, stateInfo.shortNameHash, stateInfo.normalizedTime, IsAttackedState, CollState));
 
         if (pointsInTime.Count > Mathf.Round(recordTime * 50))
         {
@@ -93,8 +78,9 @@ public class TimeControll : MonoBehaviour
 
             transform.position = point.position;
             transform.rotation = point.rotation;
-            
             transform.localScale = point.scale;
+            anim.SetBool(IS_ATTACKED, point.isAttacked);
+            col.enabled = point.collState;
             
             // 핵심: 애니메이션 강제 설정
             // Play(상태해시, 레이어인덱스, 정규화된시간)
@@ -115,16 +101,21 @@ public class PointInTime
     public Vector3 scale;
     public Quaternion rotation;
     public float height;
+    public Rigidbody2D rb;
 
-     public int animStateHash;      // 애니메이션 상태의 고유 ID
-     public float animNormalizedTime; // 애니메이션 재생 진행률 (0.0 ~ 1.0)
-    public PointInTime(Vector3 _pos, Quaternion _rot, Vector3 _sca, int _animHash, float _animTime)
+    public bool collState;
+    public bool isAttacked;
+    public int animStateHash;      // 애니메이션 상태의 고유 ID
+    public float animNormalizedTime; // 애니메이션 재생 진행률 (0.0 ~ 1.0)
+    public PointInTime(Vector3 _pos, Quaternion _rot, Vector3 _sca, int _animHash, float _animTime, bool _isAttacked, bool _collState)
     {
         position = _pos;
         rotation = _rot;
         scale = _sca;
         animStateHash = _animHash;
         animNormalizedTime = _animTime;
+        isAttacked = _isAttacked;
+        collState = _collState;
     }
 }
 

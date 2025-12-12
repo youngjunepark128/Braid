@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 3803075449290760468}
   - component: {fileID: 8097671312715352227}
   - component: {fileID: 6622770228223127687}
+  - component: {fileID: 6214205326478896462}
   m_Layer: 0
   m_Name: Tim
   m_TagString: Player
@@ -211,6 +212,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.8, y: 1.4}
   m_Direction: 0
+--- !u!114 &6214205326478896462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8524278149142438550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e71035fa8468c43985dde89efcfa57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TakeDamage
+  popUpForce: 5
+  gravity: 6
 --- !u!1 &8645209676642249257
 GameObject:
   m_ObjectHideFlags: 0

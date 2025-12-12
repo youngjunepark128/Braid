@@ -10,6 +10,7 @@ public class PlayerControll : MonoBehaviour
     private Animator animator { get; set; }
     private SpriteRenderer spriteRenderer {get; set;}
     private  Rigidbody2D rigidBody { get; set; }
+    private TakeDamage takeDamage;
 
     [Header("Settings")] 
     public float moveSpeed = 3.0f;
@@ -27,10 +28,13 @@ public class PlayerControll : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         rigidBody = GetComponent<Rigidbody2D>();
+        takeDamage = GetComponent<TakeDamage>();
     }
 
     private void Update()
     {
+        if (TimeManager.isRewinding == true) return;
+        if(takeDamage.IsDead == true) return;
         moveInput = Input.GetAxisRaw("Horizontal");
         CheckIfGrounded();
         Move();
@@ -72,8 +76,8 @@ public class PlayerControll : MonoBehaviour
     }
     public void TakeDamage()
     {
+        takeDamage.Die();
         Debug.Log("플레이어 사망!");
-        
     }
     
     //-------------------------------------------

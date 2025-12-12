@@ -8,6 +8,8 @@ public class EnemyController : MonoBehaviour
     private Animator animator { get; set; }
     private SpriteRenderer spriteRenderer {get; set;}
     private  Rigidbody2D rigidBody { get; set; }
+    
+    private TakeDamage takeDamage;
 
     
     [Header("Components")]
@@ -31,6 +33,7 @@ public class EnemyController : MonoBehaviour
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         rigidBody = GetComponent<Rigidbody2D>();
         coll = GetComponent<CapsuleCollider2D>();
+        takeDamage = GetComponent<TakeDamage>();
     }
 
     private void FixedUpdate()
@@ -119,7 +122,7 @@ public class EnemyController : MonoBehaviour
             if (player.VerticalSpeed <= 0 && player.transform.position.y > transform.position.y + 0.3f)
             {
                 player.Bounce();
-                Die();
+                takeDamage.Die();
             }
             else
             {
@@ -127,41 +130,7 @@ public class EnemyController : MonoBehaviour
             }
         }
     }
-
-    void Die()
-    {
-        animator.SetBool(IS_ATTACKED, true);
-        IsAttacked = true;
-        coll.enabled = false;
-        Vector3 scaler = transform.localScale;
-        scaler.y *= -1; 
-        transform.localScale = scaler;
-        StartCoroutine(DeadFallSequence());
-    }
     
-    IEnumerator DeadFallSequence()
-    {
-        float timer = 0f;
-        float duration = 3.0f; // 3초 동안 떨어짐 (이후엔 화면 밖일 테니)
-        
-        // 초기 속도 설정 (위로 살짝 튐)
-        float verticalVelocity = 5.0f; 
-
-        while (timer < duration)
-        {
-            // 되감기 중이라면 코루틴 강제 중단 (시스템에 맡김)
-            if (TimeManager.isRewinding) yield break;
-
-            // 물리 공식: v = v0 + at
-            verticalVelocity += gravity * Time.deltaTime;
-            
-            // 위치 이동: y = y + vt
-            transform.position += Vector3.up * verticalVelocity * Time.deltaTime;
-
-            timer += Time.deltaTime;
-            yield return null; // 다음 프레임까지 대기
-        }
-    }
     //---------------------------------------------------
     private void CheckIfGrounded()
     {
