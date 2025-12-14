@@ -122,6 +122,10 @@ public class TimeControll : MonoBehaviour
         {
         }
     }
+    public List<PointInTime> GetHistory()
+    {
+        return pointsInTime;
+    }
 }
 
 //-------------------------------------------------------------------

@@ -31,6 +31,7 @@ public class PlayerControll : MonoBehaviour
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         rigidBody = GetComponent<Rigidbody2D>();
         takeDamage = GetComponent<TakeDamage>();
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
     }
 
     private void Update()

@@ -18,7 +18,12 @@ public class FollowCamera : MonoBehaviour
 
     [field: SerializeField] private float lerpSpeed = 1.0f; //Damping 값
     [SerializeField] private Vector3 offset;
-    
+
+    private void Start()
+    {
+        ChangeState(States.Following);
+    }
+
     private void Update()
     {
         //테스트 코드

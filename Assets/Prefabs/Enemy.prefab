@@ -144,9 +144,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5df2c8c3b86238a478e322e38f00c245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeControll
-  recordTime: 5
+  recordTime: 600
   ScriptsDisabled:
   - {fileID: 6225032655565219201}
+  enableAfterimage: 1
+  afterimageColor: {r: 0, g: 1, b: 1, a: 0.7}
+  afterimageFadeSpeed: 5
+  afterimageSpawnRate: 0.05
 --- !u!114 &6225032655565219201
 MonoBehaviour:
   m_ObjectHideFlags: 0

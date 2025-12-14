@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControll
   moveSpeed: 6
+  waitTime: 0
   GroundChecker: {fileID: 8279298426035539059}
   GroundCheckRadius: 0.45
   <GroundLayerMask>k__BackingField:
@@ -145,9 +146,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5df2c8c3b86238a478e322e38f00c245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeControll
-  recordTime: 5
+  recordTime: 600
   ScriptsDisabled:
   - {fileID: 1165042501749764280}
+  enableAfterimage: 1
+  afterimageColor: {r: 0, g: 1, b: 1, a: 0.7}
+  afterimageFadeSpeed: 5
+  afterimageSpawnRate: 0.05
 --- !u!50 &8097671312715352227
 Rigidbody2D:
   serializedVersion: 5
@@ -237,6 +242,7 @@ GameObject:
   - component: {fileID: 1477698344740425039}
   - component: {fileID: 255892208919373921}
   - component: {fileID: 3440925259379927560}
+  - component: {fileID: 8751284174418662158}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -286,7 +292,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -341,3 +347,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8751284174418662158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8645209676642249257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee158225ee1e59f4791627785501d950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AllIn1SpriteShaderAssembly::AllIn1SpriteShader.AllIn1Shader
+  currentShaderType: 0
+  normalStrength: 5
+  normalSmoothing: 1
+  computingNormal: 0
