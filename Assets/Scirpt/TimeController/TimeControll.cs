@@ -22,7 +22,15 @@ public class TimeControll : MonoBehaviour
     private Animator anim; // 애니메이터 참조 추가
     private Transform current;
     private AllIn1Shader allIn1;
-    private SpriteRenderer sr;
+    
+    [Header("Afterimage Effect")]
+    public bool enableAfterimage = true; // 잔상 효과 켤지 여부
+    public Color afterimageColor = new Color(0f, 1f, 1f, 0.7f); // 산데비스탄 느낌의 형광 시안색
+    public float afterimageFadeSpeed = 5f; // 사라지는 속도
+    public float afterimageSpawnRate = 0.05f; // 잔상 생성 간격 (초)
+
+    private float afterimageTimer;
+    private SpriteRenderer mySr; // 내 스프라이트 렌더
     
     private Vector3 currentRecordPos;
     private Vector3 currentRecordSca;
@@ -38,7 +46,7 @@ public class TimeControll : MonoBehaviour
         currentRecordPos = new Vector3(current.position.x, current.position.y, current.position.z);
         col = GetComponent<CapsuleCollider2D>();
         allIn1 = GetComponentInChildren<AllIn1Shader>();
-        sr = GetComponentInChildren<SpriteRenderer>();
+        mySr = GetComponentInChildren<SpriteRenderer>();
     }
 
     void FixedUpdate()
@@ -81,18 +89,29 @@ public class TimeControll : MonoBehaviour
         {
             PointInTime point = pointsInTime[0];
 
+           
+            // 2. 현재 나의 모습으로 초기화 (위치 이동 전에 찍어야 함)
+            afterimageTimer -= Time.unscaledDeltaTime; // 되감기 중 TimeScale 영향 받을 수 있으므로 unscaled 추천
+            if (afterimageTimer <= 0f)
+            {
+                // 1. 풀에서 가져옴
+                GameObject ghostObj = AfterimagePool.Instance.GetFromPool();
+                GhostSprite ghost = ghostObj.GetComponent<GhostSprite>();
+                    
+                // 2. 현재 내 모습으로 세팅 (Material은 프리팹에 이미 적용되어 있음)
+                // 현재 위치(transform.position)에 생성되므로, 나는 떠나도 얘는 여기 남습니다.
+                ghost.Init(mySr.sprite, transform.position, transform.rotation, transform.localScale, afterimageFadeSpeed);
+                    
+                // 3. 타이머 리셋
+                afterimageTimer = afterimageSpawnRate;
+            }
+            
             transform.position = point.position;
             transform.rotation = point.rotation;
             transform.localScale = point.scale;
             anim.SetBool(IS_ATTACKED, point.isAttacked);
             col.enabled = point.collState;
-            
-            // 잔상 거리나 투명도 조절
-            Material mat = sr.material;
-            mat.EnableKeyword("GHOST_ON");
-            mat.SetFloat("_GhostTransparency", 0.5f);
-            mat.SetFloat("_GhostDist", 0.2f); // 잔상 거리
-            
+
             // 핵심: 애니메이션 강제 설정
             // Play(상태해시, 레이어인덱스, 정규화된시간)
             // 이 함수는 애니메이터에게 특정 상태의 특정 시점으로 즉시 점프하라고 명령합니다.
